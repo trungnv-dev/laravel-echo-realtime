@@ -378,7 +378,6 @@
             getMessages($('.active').data('id'), 1);
 
             Echo.private('messages').listen('.message.created', (e) => {
-                console.log(e)
                 // nếu user đang login không phải là người gửi tn thì vào case này (user khác gửi tới cho user này)
                 // nếu cuộc trò chuyện đang focus = cuộc trò chuyện được user khác gửi tin nhắn tới thì vô case này
                 // get messages từ echo server và append ra màn hình
